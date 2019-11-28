@@ -1,4 +1,6 @@
 module.exports = {
+	mode: 'development',
+	devtool: 'inline-source-map',
 	entry: __dirname + '/client/app.jsx',
 	module: {
 		rules: [

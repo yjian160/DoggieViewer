@@ -1,9 +1,10 @@
 import React from 'react';
-import BreedsFilter from './BreedsFilter.jsx'
-
+import BreedsFilterContainer from './../containers/BreedsFilterContainer';
+import DoggieListContainer from './../containers/DoggieListContainer';
 var DoggieViewer = () => (
     <div>
-        <BreedsFilter availableBreeds={['a','b','c']}/>
+        <BreedsFilterContainer />
+        <DoggieListContainer />
     </div>
 )
 
