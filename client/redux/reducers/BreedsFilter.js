@@ -1,4 +1,4 @@
-const BreedsFilter = (state = {'selectedBreed': 'All Breeds', 'breeds': ['All Breeds']}, action) => {
+const BreedsFilter = (state = {'selectedBreed': 'Select a breed', 'breeds': ['Select a breed']}, action) => {
     switch(action.type) {
         case 'UPDATE_AVAILABLE_BREEDS_LIST':
             return Object.assign({}, state, {breeds: state.breeds.concat(action.availableBreeds)});
