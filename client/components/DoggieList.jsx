@@ -4,7 +4,9 @@ import { useEffect } from 'react';
 var DoggieList = ({doggieList, selectedBreed, addToDoggieList}) => {
 
     function handleScroll() {
-        if (window.innerHeight + document.body.scrollTop !== document.documentElement.offsetHeight) return;
+        console.log(window.innerHeight, document.body.scrollTop, document.documentElement.scrollTop, document.documentElement.offsetHeight)
+        if (window.innerHeight + document.body.scrollTop === document.documentElement.offsetHeight
+            || window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight)
         addToDoggieList(selectedBreed);
     }
     
