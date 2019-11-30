@@ -5,6 +5,7 @@ import DoggieListContainer from './../containers/DoggieListContainer';
 
 var DoggieViewer = () => (
     <div>
+        <meta name="viewport" content="width=device-width"/>
         <BreedsFilterContainer />
         <DoggieListContainer />
     </div>
