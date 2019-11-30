@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+//Query the dog.ceo API for list of available breeds
 var getDogBreedsFromAPI = (callback) => {
     axios.get('https://dog.ceo/api/breeds/list/all')
         .then((res) => {

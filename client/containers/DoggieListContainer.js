@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import DoggieList from './../components/DoggieList.jsx'
 import { addToDoggieList } from './../redux/actions/DoggieList'
 
+
 var mapStateToProps = (state) => {
     return ({
     doggieList: state.DoggieList,
